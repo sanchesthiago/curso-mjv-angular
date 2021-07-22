@@ -1,0 +1,36 @@
+.products-container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    max-width:750px;
+    
+    
+}
+.search{    
+    text-align: center;
+    padding-bottom: 19px;
+        h3{
+            font-size: 22pt;
+            font-weight: bold;
+            font-family: Trebuchet MS;
+            color:white;
+            background-color:rgb(173, 51, 67);
+            height: 40px;
+        }
+            input{
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+                border-style: none;
+                box-shadow: 5px 4px 8px #888888;
+            }
+}
+
+.no-products{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+}
