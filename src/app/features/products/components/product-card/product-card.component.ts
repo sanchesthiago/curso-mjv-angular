@@ -7,7 +7,7 @@ import { Product } from '../../models/product.module';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
-
+cpf='38409309874';
   @Input()
   product?: Product;
 

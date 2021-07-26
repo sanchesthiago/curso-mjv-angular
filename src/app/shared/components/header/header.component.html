@@ -2,6 +2,20 @@
 <nav>
     <div id="logo">
         <img id ="pao" src="\assets\roselicia.png" alt="logo"  >
+
+        <div class="msg-day">
+            <h3 > Bom dia, hoje é: {{data | date}}, e são: {{tempo}} </h3>
+        </div>
+       
+        <div> teste{{hora}}</div>
+        <div (click)="passTime()"> teste</div>
+        <div class="img-day" >
+            
+            <img [src]="passTime()" > oioi
+
+        </div>
+        
+        
        
     </div>
     <ul>

@@ -5,6 +5,11 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ProductsModule } from './features/products/products.module';
 
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt); 
+
 
 
 @NgModule({
@@ -19,7 +24,12 @@ import { ProductsModule } from './features/products/products.module';
     ProductsModule
     
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID, 
+      useValue: "pt-BR"
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
