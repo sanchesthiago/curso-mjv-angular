@@ -10,19 +10,29 @@ export class HeaderComponent implements OnInit {
   hora = this.data.getHours();
   min = this.data.getMinutes();
   tempo = (`${this.hora}h:${this.min}m`)
-  
-
+  after = "/assets/afternoon.png"
+  day ="/assets/day.png"
+  night ="/assets/night.png"
   constructor() { }
 
   ngOnInit(): void {
   }
   
 passTime(){
-  if(this.hora<14)
+  if(this.hora<=12){
+     return this.day
+    }
+  if(this.hora>=14){
+    return this.after
+  }
+  if(this.hora>=18){
+    return this.night
+  }
+  return
+
   
-  document.write("\assets\afternoon.png")
-  //alert(`passou ${this.hora}`)
 }
+
   
 
 
