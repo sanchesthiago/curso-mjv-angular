@@ -22,10 +22,10 @@ passTime(){
   if(this.hora<=12){
      return this.day
     }
-  if(this.hora>=14){
+  if(this.hora>=14 && this.hora<=18){
     return this.after
   }
-  if(this.hora>=18){
+  if(this.hora>=18 && this.hora<=23){
     return this.night
   }
   return
