@@ -8,17 +8,21 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { LoginModule } from './features/login/login.module';
+
+import { ContactModule } from './features/contact/contact.module';
 registerLocaleData(localePt); 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     ProductsModule,
-    LoginModule
+    LoginModule,
+    ContactModule
    ],
   providers: [
     {
