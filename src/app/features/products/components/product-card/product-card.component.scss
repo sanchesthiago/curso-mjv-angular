@@ -1,0 +1,71 @@
+.card{
+    width: 325px;
+    height: 367px;
+    border-radius: 15px;
+    background-color: rgb(200, 214, 238);
+    text-align: center;
+    
+}
+
+.img-prod{
+    padding-top: 30px;
+}
+.title-card{
+    position: absolute;
+    margin-top: 15px;
+    padding-left: 63px;
+    font-family: Trebuchet MS;
+    font-size: 22pt;
+    font-weight: bold;
+    color: rgb(173, 51, 67);
+}
+
+.title-gr{
+    position: absolute;
+    margin-top: 50px;
+    padding-left: 140px;
+    font-family: Trebuchet MS;
+    font-size: 18pt;
+    font-weight: bold;
+    color: rgb(173, 51, 67);
+
+}
+
+.price{
+    position: absolute;  
+    margin-top: -50px;
+    padding-left: 90px;
+    font-size: 15pt;
+}
+
+.input-quant{
+    position: absolute;
+    margin-top: 305px;
+   margin-left: -187px;
+   width: 90px;
+   height: 22px;
+   border-radius: 7px;
+   border-style: none;
+
+}
+
+.btn-comprar{
+    position: absolute;
+    margin-top: 335px;
+    margin-left: -170px;    
+}
+
+.not-available{
+    position: absolute;
+    margin-top: -50px;
+    padding-left: 165px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 0);
+}
+.available{
+    position: absolute;
+    margin-top: -50px;
+    padding-left: 165px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 100, 25);
+}
