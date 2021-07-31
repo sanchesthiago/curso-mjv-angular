@@ -7,7 +7,7 @@ import { ProductsModule } from './features/products/products.module';
 import { ContactPageComponent } from './features/contact/page/contact.page.component';
 import { UserPageComponent } from './features/user/page/user-page/user-page.component';
 import { UserPageDetailsComponent } from './features/user/page/user-page-details/user-page-details.component';
-
+import { AuthGuard } from './shared/guards/auth.guard';
 
 
 const routes: Routes = [
@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: 'products', component: ProductsPageComponent },
   { path: 'login', component: LoginPageComponent},
   { path: 'contact', component: ContactPageComponent},
-  { path: 'user', component: UserPageComponent},
-  { path: 'user-details/:id', component:  UserPageDetailsComponent}
+  { path: 'user', component: UserPageComponent, canActivate: [AuthGuard]},
+  { path: 'user-details/:id', component:  UserPageDetailsComponent, canActivate: [AuthGuard]}
  
   
 ];

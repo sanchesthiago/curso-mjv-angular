@@ -20,8 +20,8 @@ export class LoginPageComponent implements OnInit {
     if(!user) {
       return this.error = true;
     }
-    this.router.navigateByUrl('user');
-    return sessionStorage.setItem('currentUser', JSON.stringify(user));
+    sessionStorage.setItem('currentUser', JSON.stringify(user));
+    return this.router.navigateByUrl('products');
 
   }
     

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { User } from 'src/app/features/user/models/user.model';
 
 @Component({
   selector: 'app-header',
@@ -13,10 +15,23 @@ export class HeaderComponent implements OnInit {
   after = "/assets/afternoon.png"
   day ="/assets/day.png"
   night ="/assets/night.png"
-  constructor() { }
+  user?:User;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    const userStorage = sessionStorage.getItem('user');
+    if(userStorage) this.user = JSON.parse(userStorage);
   }
+
+  navigateByUrl(url: string) {
+    this.router.navigateByUrl(url);
+  }
+  exit() {
+    sessionStorage.clear();
+    this.navigateByUrl('/login');
+  }
+
   
 passTime(){
   if(this.hora<=12){
