@@ -10,6 +10,7 @@ import localePt from '@angular/common/locales/pt';
 import { LoginModule } from './features/login/login.module';
 
 import { ContactModule } from './features/contact/contact.module';
+import { UserModule } from './features/user/user.module';
 registerLocaleData(localePt); 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ registerLocaleData(localePt);
     SharedModule,
     ProductsModule,
     LoginModule,
-    ContactModule
+    ContactModule,
+    UserModule
    ],
   providers: [
     {

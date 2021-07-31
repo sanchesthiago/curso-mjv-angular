@@ -1,0 +1,24 @@
+<div class="user-box" *ngIf="user && detail">
+    <h2>{{user.name}}</h2>
+    <img  [src]="user.img">    
+    <p>Email: {{user.email}}</p>
+    <p>Data Inclusão: {{user.inclusionDate}}</p>
+    
+        <div class="container-button">
+            <a [routerLink]="['/user-details', user.id]">Detalhes</a>
+            <!-- <input type="button" value="Detalhes">detalhes
+            <input type="button" value="Excluir"> -->
+        </div>
+</div>
+
+<div class="user-detais" *ngIf="user && !detail">
+    <h2>{{user.name}}</h2>
+    <img  [src]="user.img">    
+    <p>Email: {{user.email}}</p>
+    <p>Data Inclusão: {{user.inclusionDate}}</p>
+    <p>Ativo?: {{user.validRegistration}}</p>
+    <p>Senha: {{user.password}} </p>    
+    <p>Registro Valido: {{user.validRegistration}} </p>
+
+
+</div>
