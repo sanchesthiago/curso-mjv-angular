@@ -1,5 +1,0 @@
-validateUser
-
-getUserByEmailAndPassword(Email: String , Password: String){
-      return this.products.filter((product) => product.)
-  }
