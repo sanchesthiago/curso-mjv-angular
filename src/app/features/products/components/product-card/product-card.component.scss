@@ -69,3 +69,17 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 100, 25);
 }
+.product-details{
+    display: flex;
+    margin-left: 210px;
+    margin-top: 12px;
+    cursor: pointer;
+    :hover {
+        color:white;
+        background-color: rgb(32, 2, 87);
+    }
+}
+.container-product-details{
+    background-color: white;
+    text-align: center;
+}

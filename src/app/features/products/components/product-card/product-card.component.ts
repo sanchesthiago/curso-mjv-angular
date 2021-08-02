@@ -11,6 +11,9 @@ cpf='38409309874';
   @Input()
   product?: Product;
 
+  @Input()
+  detail: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {

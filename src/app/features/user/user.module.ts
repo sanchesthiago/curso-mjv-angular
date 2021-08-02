@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { UserPageDetailsComponent } from './page/user-page-details/user-page-details.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { CreateUserPageComponent } from './page/create-user-page/create-user-page.component';
 
 
 
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
     UserComponent,
     UserListComponent,
     UserPageDetailsComponent,
+    CreateUserPageComponent,
     
   ],
   imports: [
