@@ -8,6 +8,8 @@ import { UserPageDetailsComponent } from './page/user-page-details/user-page-det
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CreateUserPageComponent } from './page/create-user-page/create-user-page.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 
 
@@ -19,12 +21,14 @@ import { CreateUserPageComponent } from './page/create-user-page/create-user-pag
     UserPageDetailsComponent,
     CreateUserPageComponent,
     
+    
   ],
   imports: [
     CommonModule,
     SharedModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    MatFormFieldModule
   ],
   exports: [UserPageComponent]
 })

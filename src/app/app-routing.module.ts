@@ -12,6 +12,8 @@ import { ProductsDetailsComponent } from './features/products/pages/products-det
 import { CreateUserPageComponent } from './features/user/page/create-user-page/create-user-page.component';
 
 
+
+
 const routes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' },
   { path: 'products', component: ProductsPageComponent },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'user', component: UserPageComponent, canActivate: [AuthGuard]},
   { path: 'user-details/:id', component:  UserPageDetailsComponent, canActivate: [AuthGuard]},
   { path: 'user-create', component:  CreateUserPageComponent, canActivate: [AuthGuard]},  
-  { path: 'products-details/:id', component:  ProductsDetailsComponent, canActivate: [AuthGuard]}
+  { path: 'products-details/:id', component:  ProductsDetailsComponent, canActivate: [AuthGuard]},
+  
+  
  
   
 ];

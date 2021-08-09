@@ -11,10 +11,15 @@ import { LoginModule } from './features/login/login.module';
 
 import { ContactModule } from './features/contact/contact.module';
 import { UserModule } from './features/user/user.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+
+
 registerLocaleData(localePt); 
 @NgModule({
   declarations: [
     AppComponent,
+    
     
   ],
   imports: [
@@ -24,13 +29,20 @@ registerLocaleData(localePt);
     ProductsModule,
     LoginModule,
     ContactModule,
-    UserModule
+    UserModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    
+   
+
    ],
   providers: [
     {
       provide: LOCALE_ID, 
       useValue: "pt-BR"
-    }
+    }, 
+
+    {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}
   ],
   bootstrap: [AppComponent]
 })
