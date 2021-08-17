@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogProductsComponent } from 'src/app/shared/dialog/dialog-products/dialog-products.component';
 import { Product } from '../../models/product.module';
 
 @Component({
@@ -11,10 +13,24 @@ cpf='38409309874';
   @Input()
   product?: Product;
 
-  @Input()
-  detail: boolean = true;
 
-  constructor() { }
+  openDialog() {
+    this.dialog.open(DialogProductsComponent, {
+      data:{
+        title: this.product?.title,
+        message: this.product?.img,
+        message1:this.product?.id,
+        message2: this.product?.price,
+        message3: this.product?.weight,
+        message4: this.product?.supply,
+        
+      }
+    });
+    
+
+  }
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }

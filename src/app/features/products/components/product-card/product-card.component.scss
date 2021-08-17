@@ -1,6 +1,6 @@
 .card{
     width: 325px;
-    height: 367px;
+    height: 390px;
     border-radius: 15px;
     background-color: rgb(200, 214, 238);
     text-align: center;
@@ -15,7 +15,7 @@
     margin-top: 15px;
     padding-left: 63px;
     font-family: Trebuchet MS;
-    font-size: 22pt;
+    font-size: 18pt;
     font-weight: bold;
     color: rgb(173, 51, 67);
 }
@@ -31,12 +31,7 @@
 
 }
 
-.price{
-    position: absolute;  
-    margin-top: -50px;
-    padding-left: 90px;
-    font-size: 15pt;
-}
+
 
 .input-quant{
     position: absolute;
@@ -49,37 +44,31 @@
 
 }
 
-.btn-comprar{
-    position: absolute;
-    margin-top: 335px;
-    margin-left: -170px;    
-}
-
-.not-available{
-    position: absolute;
-    margin-top: -50px;
-    padding-left: 165px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 0, 0);
-}
-.available{
-    position: absolute;
-    margin-top: -50px;
-    padding-left: 165px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(0, 100, 25);
-}
-.product-details{
+.container-btn{
     display: flex;
-    margin-left: 210px;
-    margin-top: 12px;
-    cursor: pointer;
-    :hover {
-        color:white;
-        background-color: rgb(32, 2, 87);
+    gap: 10px;
+    justify-content: center;
+    padding-top: 15px;
+    .btn-details{
+        background-color: rgb(4, 68, 26);
     }
 }
-.container-product-details{
-    background-color: white;
-    text-align: center;
+
+.container-PriceSupply{
+    display: flex;
+    position: absolute;    
+    gap: 10px;
+    margin-top: -50px;
+    margin-left: 95px;
+    
+    .not-available{        
+        color: rgb(255, 0, 0);
+    }
+    .available{
+        
+        color: rgb(0, 100, 25);
+    }
+
 }
+
+

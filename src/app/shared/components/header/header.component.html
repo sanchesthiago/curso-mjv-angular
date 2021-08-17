@@ -22,11 +22,11 @@
         
        
     </div>
-    <ul>
-        <li routerLink="/products">HOME</li>
-        <li routerLink= "/login">ENTRAR</li>
-        <li routerLink="/contact">CONTATO</li>
-        <li routerLink="/user">Usuário</li>
-        <li (click)="exit()">Sair</li>
-    </ul>
+        <div class="btn-header">
+        <button mat-raised-button color="primary" routerLink="/products">HOME </button>
+        <button mat-raised-button color="primary" routerLink="/login">ENTRAR </button>
+        <button mat-raised-button color="primary" routerLink="/contact">CONTATO </button>
+        <button mat-raised-button color="primary" routerLink="/user">USUÁRIO </button>
+        <button mat-raised-button color="primary"  (click)="exit()">SAIR </button>
+    </div>
 </nav>

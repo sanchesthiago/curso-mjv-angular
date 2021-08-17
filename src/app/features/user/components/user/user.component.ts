@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
 import {MatDialog} from '@angular/material/dialog';
 import { DialogUserComponent } from 'src/app/shared/dialog/dialog-user/dialog-user.component';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user',
@@ -20,8 +21,13 @@ export class UserComponent implements OnInit {
 
   
   
-  constructor(public dialog: MatDialog) { }
-  
+  constructor(public dialog: MatDialog, private userService: UserService) { }
+  remove(id:number) {
+    this.userService.removeUser(id);
+    alert(`Usuário ${this.user?.name} Excluido com sucesso`)
+
+  }
+
   openDialog() {
     this.dialog.open(DialogUserComponent, {
       data:{

@@ -1,17 +1,13 @@
-.user-box{
+.user-box{    
     background-color: rgb(200, 214, 238);
-    padding: 5px;
-    border-radius: 5px;
-    border-style: none;
-    font-family: Trebuchet MS;
-    font-size: 11pt;
-    font-weight: bold;
+    padding: 10px;    
 }
 
 
 .container-button{
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
+    padding-left: 7px;
+}
 
+.card-content{
+padding-top: 15px;
 }

@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 
 
+
 registerLocaleData(localePt); 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ registerLocaleData(localePt);
     UserModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
+    
     
    
 

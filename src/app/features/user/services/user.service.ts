@@ -87,5 +87,8 @@ getUserByEmailAndPassword(email: string, password: string){
   return this.users.find((user)=> user.email === email && user.password === password);
 
 }
-
+removeUser(id: number) {
+  const userIndex = this.users.findIndex((user) => user.id === Number(id));
+  this.users.splice(userIndex, 1);
+}
 }

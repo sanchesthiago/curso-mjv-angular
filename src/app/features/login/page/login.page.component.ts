@@ -9,6 +9,9 @@ import { UserService } from '../../user/services/user.service';
   styleUrls: ['./login.page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
+  
+  
+  
   error: boolean = false;
   constructor(private userService: UserService, private router: Router) { }
   

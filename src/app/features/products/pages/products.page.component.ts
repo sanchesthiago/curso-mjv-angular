@@ -1,17 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../models/product.module';
 import { ProductsService } from '../services/products.service';
+
 
 @Component({
   templateUrl: './products.page.component.html',
   styleUrls: ['./products.page.component.scss']
 })
+
+
 export class ProductsPageComponent implements OnInit {
+ 
+  slides = [
+    {'image': 'assets/pao_bolinha.jpg'}, 
+    {'image': 'assets/pao_bolinha2.jpg'},
+  
+  ];
+
+ 
   //declara o vetor de produtos do service
   products: Array<Product> = [];
   //
   //clona o array de produtos do service
 filteredProducts: Array<Product> = [];
+
 
   constructor(private productsService: ProductsService) { }
 
@@ -28,4 +40,6 @@ filteredProducts: Array<Product> = [];
     }
     return this.filteredProducts = products;
   }
+
+
 }
