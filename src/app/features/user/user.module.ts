@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CreateUserPageComponent } from './page/create-user-page/create-user-page.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -29,7 +30,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     RouterModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   exports: [UserPageComponent]
 })

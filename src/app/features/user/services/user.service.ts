@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user.model';
 import * as moment from 'moment';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
   users: Array <User> =[
+
     { 
       id: 1,
       name: 'Thiago',
@@ -17,6 +20,7 @@ export class UserService {
       img:'/assets/thiago.png'
   
     },
+    
   
     { 
       id: 2,
@@ -54,7 +58,7 @@ export class UserService {
   
   ];
 
-constructor() { }
+constructor(private httpClient: HttpClient) { }
 getDefaultStudent(): User {
   const dateToday = moment().format('YYYY/MM/DD');
   return {
@@ -84,7 +88,7 @@ getUserById(id: number) {
   return this.users.find((user) => user.id === Number(id));
 }
 getUserByEmailAndPassword(email: string, password: string){
-  return this.users.find((user)=> user.email === email && user.password === password);
+return this.users.find((user)=> user.email === email && user.password === password);
 
 }
 removeUser(id: number) {
